@@ -2,9 +2,40 @@
 <html>
 <head>
     <title>Curriculum Vitae - Home</title>
+    <style>
+        .top-row {
+            display: flex;
+            align-items: center;
+        }
+
+        .marquee {
+            flex: 1;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-name {
+            display: inline-block;
+            font-size: 48px;
+            font-weight: bold;
+            animation: moveRight 10s linear infinite;
+        }
+
+        @keyframes moveRight {
+            from { transform: translateX(-100%); }
+            to   { transform: translateX(100vw); }
+        }
+    </style>
 </head>
 
-<body bgcolor="#f9f1dc">
+<body bgcolor="#f9f1dc" style="margin:0;">
+    <div class="top-row">
+        <img src="profile.jpg" width="180" height="210" alt="Profile Picture">
+        <div class="marquee">
+            <span class="marquee-name">Samson Amenya</span>
+        </div>
+    </div>
+
     <table width="100%" bgcolor="#191019" cellpadding="20">
         <tr><td>
                 <font color="white" size="5">
@@ -23,16 +54,13 @@
         </tr>
     </table>
 
-    <br><br>
-    <img src="profile.jpg"width="180"height="210"alt="Profile Picture">
-    
     <br>
     <hr>
 
     <br>
 	<h2>About Me</h2>
 
-    <p>My name is <b>Samson Atenya</b>.</p>
+    <p>My name is <b>Samson Amenya</b>.</p>
 
     <p>I am currently pursuing a
         <b>Bachelor of Science in Information Technology</b>
