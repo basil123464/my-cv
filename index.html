@@ -7,33 +7,19 @@
             display: flex;
             align-items: center;
         }
-
-        .marquee {
+        .top-row marquee {
             flex: 1;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-
-        .marquee-name {
-            display: inline-block;
             font-size: 48px;
             font-weight: bold;
-            animation: moveRight 10s linear infinite;
-        }
-
-        @keyframes moveRight {
-            from { transform: translateX(-100%); }
-            to   { transform: translateX(100vw); }
         }
     </style>
 </head>
 
 <body bgcolor="#f9f1dc" style="margin:0;">
+
     <div class="top-row">
         <img src="profile.jpg" width="180" height="210" alt="Profile Picture">
-        <div class="marquee">
-            <span class="marquee-name">Samson Amenya</span>
-        </div>
+        <marquee direction="right" behavior="scroll" scrollamount="8">Samson Amenya</marquee>
     </div>
 
     <table width="100%" bgcolor="#191019" cellpadding="20">
@@ -45,11 +31,10 @@
 
             <td align="right">
                 <font size="4">
-                    <a href="Home.html"><font color="white">Home</font></a>&nbsp;&nbsp;
+                    <a href="index.html"><font color="white">Home</font></a>&nbsp;&nbsp;
                     <a href="Personal Experience.html"><font color="white">Personal Experience</font></a>&nbsp;&nbsp;
                     <a href="Contacts.html"><font color="white">Contacts</font></a>&nbsp;&nbsp;
                     <a href="Hobbies.html"><font color="white">Hobbies</font></a>
-			<a href="index.html"><font color="white">Home</font></a>&nbsp;&nbsp;
                 </font>
             </td>
         </tr>
@@ -59,7 +44,7 @@
     <hr>
 
     <br>
-	<h2>About Me</h2>
+    <h2>About Me</h2>
 
     <p>My name is <b>Samson Amenya</b>.</p>
 
@@ -70,8 +55,6 @@
     <p>I have a background in Information Technology with an
         interest in computer systems, web development, databases,
         computer networking and information management.</p>
-
-  
 
     <p>After completing my course, I hope to build a career in
         the Information Technology field. I would like to gain
